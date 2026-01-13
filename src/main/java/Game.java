@@ -24,7 +24,10 @@ public class Game {
                     map[y][x] = cityMap.createTile();
                 }
             }
+            System.out.println("City Map");
+            System.out.println("------------------------------");
             cityMap.display(map);
+            System.out.println("------------------------------");
         } else if (mapChoice == 'w') {
             WildernessMap wildernessMap = new WildernessMap();
             map = new Tile[mapSize][mapSize];
@@ -33,7 +36,10 @@ public class Game {
                     map[y][x] = wildernessMap.createTile();
                 }
             }
+            System.out.println("Wilderness Map");
+            System.out.println("------------------------------");
             wildernessMap.display(map);
+            System.out.println("------------------------------");
         } else if (mapChoice == 'q'){
             System.out.println("Map creation completed...");
             break;
